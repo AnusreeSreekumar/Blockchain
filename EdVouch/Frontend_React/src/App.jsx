@@ -60,7 +60,7 @@ function App() {
     const certiInstance = new ethers.Contract(cAddress, cAbi, signer);
     const txValue = await certiInstance.certificates(id);
     console.log(txValue[0]);
-    setData(tx);
+    setData(txValue);
     // setOutput(`Name of Candidate:${txValue[0]} Course:${txValue[1]} Grade:${txValue[2]} Date:${txValue[3]}}`)
 
   }
@@ -124,7 +124,7 @@ function App() {
           <input
             type="number"
             id="ID"
-            name="id"
+            name="ID"
             className="shadow-md px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 flex-grow"
           />
           <button
