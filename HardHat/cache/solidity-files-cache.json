@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/anusree/Documents/Git Repos/Blockchain/HardHat/contracts/CertiApp.sol": {
-      "lastModificationDate": 1734066698450,
-      "contentHash": "8750083a2a5e948cb7efdde15754aa85",
+      "lastModificationDate": 1734501681475,
+      "contentHash": "49b39b0fab55cabd94e87bbca6e4a4f5",
       "sourceName": "contracts/CertiApp.sol",
       "solcConfig": {
         "version": "0.8.28",

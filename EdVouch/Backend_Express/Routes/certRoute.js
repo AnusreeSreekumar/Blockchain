@@ -7,20 +7,20 @@ import dotenv from "dotenv";
 const certRouter = Router();
 dotenv.config();
 //this is for HardHat node
-// const provider = new ethers.JsonRpcProvider('http://127.0.0.1:8545/');
-// const signer = await provider.getSigner();
+const provider = new ethers.JsonRpcProvider('http://127.0.0.1:8545/');
+const signer = await provider.getSigner();
 
 //this is for Sepolia Test
-const provider = new ethers.JsonRpcProvider(`https://eth-sepolia.g.alchemy.com/v2/${process.env.API_KEY}`);
-const signer = new ethers.Wallet(process.env.PRIVATE_KEY,provider)
-console.log("Sepolia Account: ",signer.address);
+// const provider = new ethers.JsonRpcProvider(`https://eth-sepolia.g.alchemy.com/v2/${process.env.API_KEY}`);
+// const signer = new ethers.Wallet(process.env.PRIVATE_KEY,provider)
+// console.log("Sepolia Account: ",signer.address);
 const certInstance = new ethers.Contract(address["CertModule#Certi"], ABI.abi,signer )
 // console.log(certInstance);
 
 
-certRouter.get('/', (req,res) => {
-    res.send('Hello Router in 4000!!!')
-})
+// certRouter.get('/', (req,res) => {
+//     res.send('Hello Router in 4000!!!')
+// })
 
 certRouter.post('/issueCert', async (req,res) => {
 

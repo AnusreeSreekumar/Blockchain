@@ -9,6 +9,7 @@ contract Certi{
         string grade;
         string date;
     }
+    event issued(string, uint, string);
 
     address admin;
 
@@ -32,6 +33,7 @@ contract Certi{
                       ) public onlyAdmin{
 
                         certificates[_id] = Certificate(_name, _course, _grade, _date);
+                        emit issued(_course, _id, _grade);
                       }
 
 }
