@@ -2,6 +2,7 @@ Starting a HardHat project:
 ***************************
 
 Step 1: Open Visual Studio in new folder => Open terminal.
+
 Step 2: npm init 
 Step 3: npm i -D hardhat
 Step 4: npx hardhat init
